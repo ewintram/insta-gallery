@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Photo from './Photo';
+import Posts from './Posts';
 import './App.css';
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="feed">
-          <Photo photo={this.props.posts[0]} />
+          <Posts posts={this.props.posts} />
         </p>
       </div>
     );
