@@ -5,7 +5,7 @@ import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
 
 it('renders the photo', () => {
-  const wrapper = shallow(<Photo photo={data[0]}/>);
-  const photo = wrapper.find('li')
-  expect(photo.html()).toEqual("<li><img src=\"cat1.jpeg\"/></li>");
+  const wrapper = shallow(<Photo post={data[0]}/>);
+  const photo = wrapper.find('img')
+  expect(photo.html()).toEqual("<img src=\"cat1.jpeg\"/>");
 });

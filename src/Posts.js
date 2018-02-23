@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Photo from './Photo.js';
+import Post from './Post.js';
 
 class Posts extends React.Component {
   render() {
@@ -7,7 +7,7 @@ class Posts extends React.Component {
       <div className="posts">
         <ul>
           {this.props.posts.map((post, index) => {
-            return <Photo photo={post} key={index}/>
+            return <Post post={post} key={index}/>
             })
           }
         </ul>
