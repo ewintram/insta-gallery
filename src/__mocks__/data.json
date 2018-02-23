@@ -1,8 +1,25 @@
 [{
-  "username": "heacan",
-  "userIconLink": "heacan1.jpg",
-  "imageLink": "cat1.jpeg",
-  "description": "A lie is like a cat: You need to stop it before it gets out the door or it’s really hard to catch.",
-  "likes": 53,
-  "liked": true
-}]
+    "username": "heacan",
+    "userIconLink": "heacan1.jpg",
+    "imageLink": "cat1.jpeg",
+    "description": "A lie is like a cat: You need to stop it before it gets out the door or it’s really hard to catch.",
+    "likes": 53,
+    "liked": true
+  },
+  {
+    "username": "kaedenor",
+    "userIconLink": "kaedenor1.jpg",
+    "imageLink": "cat2.jpeg",
+    "description": "It is a very inconvenient habit of kittens (Alice had once made the remark) that, whatever you say to them they always purr.",
+    "likes": 673,
+    "liked": false
+  },
+  {
+    "username": "damarionei",
+    "userIconLink": "damarionei2.jpg",
+    "imageLink": "cat3.jpeg",
+    "description": "Way down deep, we’re all motivated by the same urges. Cats have the courage to live by them.",
+    "likes": 292,
+    "liked": false
+  }
+]
