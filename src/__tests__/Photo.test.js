@@ -7,5 +7,5 @@ import { shallow } from 'enzyme';
 it('renders the photo', () => {
   const wrapper = shallow(<Photo post={data[0]}/>);
   const photo = wrapper.find('img')
-  expect(photo.html()).toEqual("<img src=\"cat1.jpeg\"/>");
+  expect(photo.html()).toEqual("<img src=\"cat1.jpeg\" alt=\"cat\"/>");
 });
