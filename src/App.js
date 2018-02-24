@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Posts from './Posts';
 import { Glyphicon } from 'react-bootstrap';
 import './App.css';

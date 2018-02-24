@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Photo from '../Photo';
 import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';

@@ -1,6 +1,5 @@
 import TestUtils from 'react-dom/test-utils';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Likes from '../Likes'
 import { shallow, mount } from 'enzyme';
 
