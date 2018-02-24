@@ -13,6 +13,5 @@ var childComponent
 it('renders all of the Post components', function() {
   component = TestUtils.renderIntoDocument(<Posts posts={data}/>);
   childComponent = TestUtils.scryRenderedComponentsWithType(component, Post);
-
   expect(childComponent.length).toEqual(3);
 });

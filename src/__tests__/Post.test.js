@@ -17,37 +17,31 @@ jest.mock('../User');
 var component
 var childComponent
 
-it('renders an Avatar component', function() {
+beforeEach(() => {
   component = TestUtils.renderIntoDocument(<Post />);
-  childComponent = TestUtils.scryRenderedComponentsWithType(component, Avatar);
+});
 
+it('renders an Avatar component', function() {
+  childComponent = TestUtils.scryRenderedComponentsWithType(component, Avatar);
   expect(childComponent.length).toEqual(1);
 });
 
 it('renders an Description component', function() {
-  component = TestUtils.renderIntoDocument(<Post />);
   childComponent = TestUtils.scryRenderedComponentsWithType(component, Description);
-
   expect(childComponent.length).toEqual(1);
 });
 
 it('renders a Likes component', function() {
-  component = TestUtils.renderIntoDocument(<Likes lable={'Like'}/>);
   childComponent = TestUtils.scryRenderedComponentsWithType(component, Likes);
-
   expect(childComponent.length).toEqual(1);
 });
 
 it('renders an Photo component', function() {
-  component = TestUtils.renderIntoDocument(<Post />);
   childComponent = TestUtils.scryRenderedComponentsWithType(component, Photo);
-
   expect(childComponent.length).toEqual(1);
 });
 
 it('renders an User component', function() {
-  component = TestUtils.renderIntoDocument(<Post />);
   childComponent = TestUtils.scryRenderedComponentsWithType(component, User);
-
   expect(childComponent.length).toEqual(1);
 });
