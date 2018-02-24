@@ -3,11 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Post from '../Post';
 import Avatar from '../Avatar';
+import Btn from '../Btn.js';
 import Description from '../Description';
 import Photo from '../Photo';
 import User from '../User';
 import { shallow } from 'enzyme';
 jest.mock('../Avatar');
+jest.mock('../Btn.js');
 jest.mock('../Description');
 jest.mock('../Photo');
 jest.mock('../User');
@@ -18,6 +20,13 @@ var childComponent
 it('renders an Avatar component', function() {
   component = TestUtils.renderIntoDocument(<Post />);
   childComponent = TestUtils.scryRenderedComponentsWithType(component, Avatar);
+
+  expect(childComponent.length).toEqual(1);
+});
+
+it('renders a Btn component', function() {
+  component = TestUtils.renderIntoDocument(<Btn lable={'Like'}/>);
+  childComponent = TestUtils.scryRenderedComponentsWithType(component, Btn);
 
   expect(childComponent.length).toEqual(1);
 });
