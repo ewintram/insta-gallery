@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { Image } from 'react-bootstrap';
 
 class Photo extends React.Component {
   render() {
     return (
-      <img src={require(`./images/${this.props.post.imageLink}`)} alt="cat"/>
+      <Image src={require(`./images/${this.props.post.imageLink}`)} className="image" alt="cat" responsive/>
     )
   }
 }

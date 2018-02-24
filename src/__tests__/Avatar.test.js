@@ -6,6 +6,6 @@ import { shallow } from 'enzyme';
 
 it('renders the avatar', () => {
   const wrapper = shallow(<Avatar post={data[0]}/>);
-  const avatar = wrapper.find('img')
-  expect(avatar.html()).toEqual("<img width=\"64\" src=\"heacan1.jpg\" class=\"avatar\" alt=\"user icon\"/>");
+  const avatar = wrapper.find('Image')
+  expect(avatar.html()).toEqual("<img src=\"heacan1.jpg\" alt=\"user icon\" class=\"avatar img-responsive img-circle\"/>");
 });
