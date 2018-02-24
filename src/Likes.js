@@ -18,8 +18,8 @@ class Likes extends React.Component {
   render() {
     return (
       <div>
-        <Button onClick={this.handleClick}>{this.props.label}</Button>
-        <span>{this.state.count} likes</span>
+        <Button onClick={this.handleClick} className="button">{this.props.label}</Button>
+        <span className="count">{this.state.count} likes</span>
       </div>
     )
   }
