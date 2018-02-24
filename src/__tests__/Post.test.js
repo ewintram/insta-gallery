@@ -1,11 +1,44 @@
+import TestUtils from 'react-dom/test-utils';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Post from '../Post';
-import data from '../__mocks__/data.json';
+import Avatar from '../Avatar';
+import Description from '../Description';
+import Photo from '../Photo';
+import User from '../User';
 import { shallow } from 'enzyme';
+jest.mock('../Avatar');
+jest.mock('../Description');
+jest.mock('../Photo');
+jest.mock('../User');
 
-it('renders a single post with subcomponents', () => {
-  const wrapper = shallow(<Post post={data[0]}/>);
-  const post = wrapper.find('li')
-  expect(post.html()).toEqual("<li><div class=\"media\"><div class=\"media-left\"><img width=\"64\" src=\"heacan1.jpg\" class=\"avatar\"/></div><div class=\"media-body\"><h4>heacan</h4></div></div><div class=\"container\"><div class=\"row\"><img src=\"cat1.jpeg\"/></div><div class=\"row\"><p>A lie is like a cat: You need to stop it before it gets out the door or it’s really hard to catch.</p></div></div></li>");
+var component
+var childComponent
+
+it('renders an Avatar component', function() {
+  component = TestUtils.renderIntoDocument(<Post />);
+  childComponent = TestUtils.scryRenderedComponentsWithType(component, Avatar);
+
+  expect(childComponent.length).toEqual(1);
+});
+
+it('renders an Description component', function() {
+  component = TestUtils.renderIntoDocument(<Post />);
+  childComponent = TestUtils.scryRenderedComponentsWithType(component, Description);
+
+  expect(childComponent.length).toEqual(1);
+});
+
+it('renders an Photo component', function() {
+  component = TestUtils.renderIntoDocument(<Post />);
+  childComponent = TestUtils.scryRenderedComponentsWithType(component, Photo);
+
+  expect(childComponent.length).toEqual(1);
+});
+
+it('renders an User component', function() {
+  component = TestUtils.renderIntoDocument(<Post />);
+  childComponent = TestUtils.scryRenderedComponentsWithType(component, User);
+
+  expect(childComponent.length).toEqual(1);
 });
