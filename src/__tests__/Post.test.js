@@ -3,13 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Post from '../Post';
 import Avatar from '../Avatar';
-import Btn from '../Btn.js';
+import Likes from '../Likes.js';
 import Description from '../Description';
 import Photo from '../Photo';
 import User from '../User';
 import { shallow } from 'enzyme';
 jest.mock('../Avatar');
-jest.mock('../Btn.js');
+jest.mock('../Likes.js');
 jest.mock('../Description');
 jest.mock('../Photo');
 jest.mock('../User');
@@ -24,16 +24,16 @@ it('renders an Avatar component', function() {
   expect(childComponent.length).toEqual(1);
 });
 
-it('renders a Btn component', function() {
-  component = TestUtils.renderIntoDocument(<Btn lable={'Like'}/>);
-  childComponent = TestUtils.scryRenderedComponentsWithType(component, Btn);
+it('renders an Description component', function() {
+  component = TestUtils.renderIntoDocument(<Post />);
+  childComponent = TestUtils.scryRenderedComponentsWithType(component, Description);
 
   expect(childComponent.length).toEqual(1);
 });
 
-it('renders an Description component', function() {
-  component = TestUtils.renderIntoDocument(<Post />);
-  childComponent = TestUtils.scryRenderedComponentsWithType(component, Description);
+it('renders a Likes component', function() {
+  component = TestUtils.renderIntoDocument(<Likes lable={'Like'}/>);
+  childComponent = TestUtils.scryRenderedComponentsWithType(component, Likes);
 
   expect(childComponent.length).toEqual(1);
 });

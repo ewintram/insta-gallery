@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Avatar from './Avatar.js';
-import Btn from './Btn.js';
+import Likes from './Likes.js';
 import Description from './Description.js';
 import Photo from './Photo.js';
 import User from './User.js';
@@ -31,7 +31,7 @@ class Post extends React.Component {
           </Row>
           <Row className="likes">
             <Col xs={12} md={12}>
-              <Btn label={'Like'}/>
+              <Likes label={'Like'}/>
             </Col>
           </Row>
         </Grid>
