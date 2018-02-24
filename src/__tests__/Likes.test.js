@@ -35,4 +35,18 @@ describe('handleClick', () => {
     wrapper.instance().handleClick()
     expect(wrapper.state().count).toEqual(0);
   });
+
+  it('changes the style to primary when called', () => {
+    const wrapper = shallow(<Likes label={'Like'}/>);
+    wrapper.instance().handleClick()
+    expect(wrapper.state().bsStyle).toEqual("primary");
+  });
+
+  it('changes the style back to default when called again', () => {
+    const wrapper = shallow(<Likes label={'Like'}/>);
+    expect(wrapper.state().bsStyle).toEqual("default");
+    wrapper.instance().handleClick()
+    wrapper.instance().handleClick()
+    expect(wrapper.state().bsStyle).toEqual("default");
+  });
 });
