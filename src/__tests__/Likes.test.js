@@ -21,7 +21,7 @@ describe('handleClick', () => {
     const wrapper = shallow(<Likes />);
     wrapper.find('Button').simulate('click')
     const count = wrapper.find('span')
-    expect(count.html()).toEqual("<span class=\"count\">1 likes</span>");
+    expect(count.html()).toEqual("<span class=\"count\">1 like</span>");
   });
 
   it('updates the likes count by 1 when called', () => {
