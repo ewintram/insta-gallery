@@ -31,7 +31,7 @@ class Post extends React.Component {
           </Row>
           <Row className="likes">
             <Col xs={12} md={12}>
-              <Likes label={'Like'}/>
+              <Likes />
             </Col>
           </Row>
         </Grid>

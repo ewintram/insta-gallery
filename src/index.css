@@ -50,3 +50,7 @@ body {
 .count {
   padding-left: 20px;
 }
+
+.btn {
+  width: 60px;
+}

@@ -8,22 +8,25 @@ class Likes extends React.Component {
     this.state = {
       count: 0,
       liked: false,
-      bsStyle: "default"
+      bsStyle: "default",
+      label: 'Like'
     }
   };
 
-  handleClick = () => {
+  handleClick = (props) => {
     if(!this.state.liked) {
       this.setState({
         count: this.state.count + 1,
         liked: true,
-        bsStyle: "primary"
+        bsStyle: "primary",
+        label: 'Liked'
       })
     } else {
       this.setState({
         count: this.state.count - 1,
         liked: false,
-        bsStyle: "default"
+        bsStyle: "default",
+        label: 'Like'
       })
     }
   };
@@ -33,7 +36,7 @@ class Likes extends React.Component {
     return (
 
       <div>
-        <Button bsStyle={this.state.bsStyle} onClick={this.handleClick}>{this.props.label}</Button>
+        <Button bsStyle={this.state.bsStyle} onClick={this.handleClick}>{this.state.label}</Button>
         <span className="count">{this.state.count} likes</span>
       </div>
     )
