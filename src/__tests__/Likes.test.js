@@ -1,14 +1,15 @@
 import TestUtils from 'react-dom/test-utils';
 import React from 'react';
 import Likes from '../Likes'
-import { shallow, mount } from 'enzyme';
+import data from '../__mocks__/data.json';
+import { mount } from 'enzyme';
 
 var wrapper;
 var button;
 var count;
 
 beforeEach(() => {
-  wrapper = mount(<Likes />);
+  wrapper = mount(<Likes post={data[0]}/>);
   button = wrapper.find('Button');
   count = wrapper.find('span');
 });
