@@ -4,8 +4,8 @@ class UserComment extends React.Component {
   render() {
     return (
       <li>
-        {this.props.username}<br />
-        {this.props.text}
+        {this.props.comment.username}<br />
+        {this.props.comment.text}
       </li>
     )
   }
