@@ -14,7 +14,7 @@ beforeEach(() => {
 });
 
 it('renders the button', () => {
-  expect(button.html()).toEqual("<button type=\"button\" class=\"btn btn-default\"><span class=\"glyphicon glyphicon-glyphicon glyphicon-trash\"></span></button>");
+  expect(button.html()).toEqual("<button type=\"button\" class=\"btn btn-lg btn-custom\"><span class=\"glyphicon glyphicon-glyphicon glyphicon-trash\"></span></button>");
 });
 
 it('calls onClickDelete when clicked', () => {

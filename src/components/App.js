@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <Glyphicon glyph="glyphicon glyphicon-camera" className="logo"/>
-          <h1 className="App-title">Welcome to instaGallery</h1>
+          <h1 className="App-title">instaGallery</h1>
         </header>
         <div className="feed">
           <Posts posts={this.props.posts}

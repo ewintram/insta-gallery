@@ -2,7 +2,7 @@
 
 ## Description
 
-This is frontend photo feed web app which renders posts from users and allows a user to like/unlike a post. The app is built in React and is my first application in this framework. It also incorporates some Bootstrap components for layout. It is designed to run with any JSON file which can be imported into `index.js` with associated images.
+This is frontend photo feed web app which renders posts from users and allows a user to like/unlike a post. The app is built in React and is my first application in this framework. It also incorporates some Bootstrap components for layout. It is designed to run with any JSON file which can be imported into `index.js` with associated images. This is also my first time using Jest and Enzyme testing frameworks producing test coverage of 100% on components.
 
 See more about my [design process](#design-process).
 

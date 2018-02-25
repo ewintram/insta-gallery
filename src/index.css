@@ -1,12 +1,21 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;;
+  background-color: rgb(255, 255, 255);
+  color: rgb(38, 38, 38);
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
 }
 
 .logo {
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .posts {
@@ -17,7 +26,9 @@ body {
 
 .post {
   border-style: solid;
-  border-color: #edeeee;
+  border-width: 1px;
+  border-color: rgb(237, 238, 238);
+  padding: 0px;
 }
 
 .user {
@@ -40,11 +51,13 @@ body {
 
 .image {
   margin: 0 auto;
-  width: 100%
+  width: 100%;
 }
 
 .likes {
   padding-bottom: 20px;
+  margin-left: 10px;
+  float: left;
 }
 
 .count {
@@ -53,4 +66,9 @@ body {
 
 .btn {
   width: 60px;
+}
+
+.delete-icon {
+  font-size: 40px;
+  color: rgb(179, 179, 179);
 }
