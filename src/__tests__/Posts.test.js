@@ -3,7 +3,6 @@ import React from 'react';
 import Posts from '../Posts';
 import Post from '../Post';
 import data from '../__mocks__/data.json';
-import { shallow } from 'enzyme';
 jest.mock('../Post');
 
 var component

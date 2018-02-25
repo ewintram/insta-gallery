@@ -5,12 +5,19 @@ import { shallow } from 'enzyme';
 
 var wrapper;
 var button;
+var spy;
 
 beforeEach(() => {
-  wrapper = shallow(<DeleteBtn />);
+  spy = jest.fn();
+  wrapper = shallow(<DeleteBtn onClickDelete={spy}/>);
   button = wrapper.find('Button');
 });
 
 it('renders the button', () => {
   expect(button.html()).toEqual("<button type=\"button\" class=\"btn btn-default\"><span class=\"glyphicon glyphicon-glyphicon glyphicon-trash\"></span></button>");
+});
+
+it('calls onClickDelete when clicked', () => {
+  button.simulate('click');
+  expect(spy).toHaveBeenCalled();
 });

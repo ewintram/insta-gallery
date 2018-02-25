@@ -24,7 +24,7 @@ class Post extends React.Component {
               <User post={this.props.post}/>
             </Col>
             <Col xs={2} md={2} className="delete-icon">
-              <DeleteBtn onClick={this.onClickDelete}/>
+              <DeleteBtn onClickDelete={this.onClickDelete}/>
             </Col>
           </Row>
           <Row className="photo">

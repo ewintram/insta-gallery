@@ -7,12 +7,15 @@ class Posts extends React.Component {
       <div>
         <ul className="posts">
           {this.props.posts.map((post, index) => {
-            return <Post post={post} key={index}/>
+            return <Post post={post}
+              key={index}
+              index={index}
+              removePost={this.props.removePost}/>
             })
           }
         </ul>
       </div>
-      )
+    )
   }
 }
 export default Posts;

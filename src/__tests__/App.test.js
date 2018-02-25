@@ -22,7 +22,6 @@ it('renders the Posts component', function() {
   expect(childComponent.length).toEqual(1);
 });
 
-
 describe('removePost', () => {
   it('removes the post at the specified position in the array', () => {
     const wrapper = shallow(<App posts={data}/>);

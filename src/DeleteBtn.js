@@ -4,7 +4,7 @@ import { Button, Glyphicon } from 'react-bootstrap';
 class DeleteBtn extends React.Component {
   render() {
     return (
-      <Button><Glyphicon glyph="glyphicon glyphicon-trash"/></Button>
+      <Button onClick={this.props.onClickDelete}><Glyphicon glyph="glyphicon glyphicon-trash"/></Button>
     )
   }
 }

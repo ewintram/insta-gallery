@@ -23,7 +23,8 @@ class App extends Component {
           <h1 className="App-title">Welcome to instaGallery</h1>
         </header>
         <div className="feed">
-          <Posts posts={this.props.posts}/>
+          <Posts posts={this.props.posts}
+            removePost={this.removePost}/>
         </div>
       </div>
     );
