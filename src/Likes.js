@@ -5,10 +5,10 @@ class Likes extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,
-      liked: false,
-      bsStyle: "default",
-      label: 'Like',
+      count: this.props.post.likes,
+      liked: this.props.post.liked,
+      bsStyle: this.props.post.liked? "primary" : "default",
+      label: this.props.post.liked? 'Liked' : 'Like',
       countLabel: 'likes'
     }
   };
