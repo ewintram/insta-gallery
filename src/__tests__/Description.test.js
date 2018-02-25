@@ -1,5 +1,5 @@
 import React from 'react';
-import Description from '../Description';
+import Description from '../components/Description';
 import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
 

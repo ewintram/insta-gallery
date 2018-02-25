@@ -1,5 +1,5 @@
 import React from 'react';
-import DeleteBtn from '../DeleteBtn'
+import DeleteBtn from '../components/DeleteBtn'
 import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
 

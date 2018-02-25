@@ -1,5 +1,5 @@
 import React from 'react';
-import Photo from '../Photo';
+import Photo from '../components/Photo';
 import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
 

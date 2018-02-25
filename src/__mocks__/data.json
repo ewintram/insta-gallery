@@ -3,8 +3,8 @@
     "userIconLink": "heacan1.jpg",
     "imageLink": "cat1.jpeg",
     "description": "A lie is like a cat: You need to stop it before it gets out the door or it’s really hard to catch.",
-    "likes": 53,
-    "liked": true
+    "likes": 0,
+    "liked": false
   },
   {
     "username": "kaedenor",

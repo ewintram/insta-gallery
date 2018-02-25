@@ -1,6 +1,5 @@
-import TestUtils from 'react-dom/test-utils';
 import React from 'react';
-import Likes from '../Likes'
+import Likes from '../components/Likes'
 import data from '../__mocks__/data.json';
 import { mount } from 'enzyme';
 

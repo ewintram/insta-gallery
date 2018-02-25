@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from '../Avatar';
+import Avatar from '../components/Avatar';
 import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
 

@@ -1,20 +1,20 @@
 import TestUtils from 'react-dom/test-utils';
 import React from 'react';
-import Post from '../Post';
-import Avatar from '../Avatar';
-import DeleteBtn from '../DeleteBtn';
-import Description from '../Description';
-import Likes from '../Likes.js';
-import Photo from '../Photo';
-import User from '../User';
+import Post from '../components/Post';
+import Avatar from '../components/Avatar';
+import DeleteBtn from '../components/DeleteBtn';
+import Description from '../components/Description';
+import Likes from '../components/Likes.js';
+import Photo from '../components/Photo';
+import User from '../components/User';
 import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
-jest.mock('../Avatar');
-jest.mock('../DeleteBtn');
-jest.mock('../Description');
-jest.mock('../Likes.js');
-jest.mock('../Photo');
-jest.mock('../User');
+jest.mock('../components/Avatar');
+jest.mock('../components/DeleteBtn');
+jest.mock('../components/Description');
+jest.mock('../components/Likes.js');
+jest.mock('../components/Photo');
+jest.mock('../components/User');
 
 var component
 var childComponent

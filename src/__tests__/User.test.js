@@ -1,5 +1,5 @@
 import React from 'react';
-import User from '../User';
+import User from '../components/User';
 import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
 

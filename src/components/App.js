@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Posts from './Posts';
 import { Glyphicon } from 'react-bootstrap';
-import './App.css';
+import '../App.css';
 
 class App extends Component {
   constructor(props) {

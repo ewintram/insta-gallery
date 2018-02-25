@@ -1,11 +1,11 @@
 import TestUtils from 'react-dom/test-utils';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '../App';
-import Posts from '../Posts';
+import App from '../components/App';
+import Posts from '../components/Posts';
 import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
-jest.mock('../Posts');
+jest.mock('../components/Posts');
 
 var component
 var childComponent

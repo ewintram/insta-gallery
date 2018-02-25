@@ -1,9 +1,9 @@
 import TestUtils from 'react-dom/test-utils';
 import React from 'react';
-import Posts from '../Posts';
-import Post from '../Post';
+import Posts from '../components/Posts';
+import Post from '../components/Post';
 import data from '../__mocks__/data.json';
-jest.mock('../Post');
+jest.mock('../components/Post');
 
 var component
 var childComponent
