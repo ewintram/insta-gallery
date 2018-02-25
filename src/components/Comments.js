@@ -1,16 +1,20 @@
 import React from 'react';
-import UserComment from './UserComment.js';
+import UserComment from './UserComment';
+import CommentsForm from './CommentsForm';
 
 class Comments extends React.Component {
   render() {
     return (
-      <ul className="comments">
-        {this.props.comments.map((comment, index) => {
-          return <UserComment comment={comment}
-            key={index}/>
-          })
-        }
-      </ul>
+      <div>
+        <ul className="comments">
+          {this.props.comments.map((comment, index) => {
+            return <UserComment comment={comment}
+              key={index}/>
+            })
+          }
+        </ul>
+        <CommentsForm />
+      </div>
     )
   }
 }
