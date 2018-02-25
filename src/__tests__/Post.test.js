@@ -7,6 +7,7 @@ import Description from '../Description';
 import Likes from '../Likes.js';
 import Photo from '../Photo';
 import User from '../User';
+import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
 jest.mock('../Avatar');
 jest.mock('../DeleteBtn');
@@ -51,3 +52,12 @@ it('renders an User component', function() {
   childComponent = TestUtils.scryRenderedComponentsWithType(component, User);
   expect(childComponent.length).toEqual(1);
 });
+
+describe('onClickDelete', () => {
+  it('calls the removePost function', () => {
+    const spy = jest.fn();
+    const wrapper = shallow(<Post post={data[0]} index='0' removePost={spy}/>);
+    wrapper.instance().onClickDelete();
+    expect(spy).toHaveBeenCalled();
+  });
+})

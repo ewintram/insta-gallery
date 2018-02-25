@@ -8,7 +8,11 @@ import User from './User.js';
 import { Col, Grid, Row } from 'react-bootstrap';
 
 class Post extends React.Component {
-render() {
+  onClickDelete = () => {
+    this.props.removePost(parseInt(this.props.index));
+  };
+
+  render() {
     return (
       <li>
         <Grid className="post">
@@ -20,7 +24,7 @@ render() {
               <User post={this.props.post}/>
             </Col>
             <Col xs={2} md={2} className="delete-icon">
-              <DeleteBtn />
+              <DeleteBtn onClick={this.onClickDelete}/>
             </Col>
           </Row>
           <Row className="photo">
