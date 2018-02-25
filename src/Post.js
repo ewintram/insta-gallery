@@ -1,13 +1,14 @@
 import React from 'react';
 import Avatar from './Avatar.js';
-import Likes from './Likes.js';
+import DeleteBtn from './DeleteBtn.js';
 import Description from './Description.js';
+import Likes from './Likes.js';
 import Photo from './Photo.js';
 import User from './User.js';
-import { Col, Grid, Media, Row } from 'react-bootstrap';
+import { Col, Grid, Row } from 'react-bootstrap';
 
 class Post extends React.Component {
-  render() {
+render() {
     return (
       <li>
         <Grid className="post">
@@ -15,8 +16,11 @@ class Post extends React.Component {
             <Col xs={2} md={2} className="user-icon">
               <Avatar post={this.props.post}/>
             </Col>
-            <Col xs={10} md={10} className="username">
+            <Col xs={8} md={8} className="username">
               <User post={this.props.post}/>
+            </Col>
+            <Col xs={2} md={2} className="delete-icon">
+              <DeleteBtn />
             </Col>
           </Row>
           <Row className="photo">
@@ -31,7 +35,7 @@ class Post extends React.Component {
           </Row>
           <Row className="likes">
             <Col xs={12} md={12}>
-              <Likes />
+              <Likes post={this.props.post}/>
             </Col>
           </Row>
         </Grid>
