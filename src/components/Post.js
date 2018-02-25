@@ -1,5 +1,6 @@
 import React from 'react';
 import Avatar from './Avatar.js';
+import Comments from './Comments.js';
 import DeleteBtn from './DeleteBtn.js';
 import Description from './Description.js';
 import Likes from './Likes.js';
@@ -40,6 +41,11 @@ class Post extends React.Component {
           <Row className="likes">
             <Col xs={12} md={12}>
               <Likes post={this.props.post}/>
+            </Col>
+          </Row>
+          <Row className="user-comments">
+            <Col xs={12} md={12}>
+              <Comments comments={[]}/>
             </Col>
           </Row>
         </Grid>

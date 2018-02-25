@@ -2,6 +2,7 @@ import TestUtils from 'react-dom/test-utils';
 import React from 'react';
 import Post from '../components/Post';
 import Avatar from '../components/Avatar';
+import Comments from '../components/Comments';
 import DeleteBtn from '../components/DeleteBtn';
 import Description from '../components/Description';
 import Likes from '../components/Likes.js';
@@ -10,6 +11,7 @@ import User from '../components/User';
 import data from '../__mocks__/data.json';
 import { shallow } from 'enzyme';
 jest.mock('../components/Avatar');
+jest.mock('../components/Comments');
 jest.mock('../components/DeleteBtn');
 jest.mock('../components/Description');
 jest.mock('../components/Likes.js');
@@ -25,6 +27,11 @@ beforeEach(() => {
 
 it('renders an Avatar component', function() {
   childComponent = TestUtils.scryRenderedComponentsWithType(component, Avatar);
+  expect(childComponent.length).toEqual(1);
+});
+
+it('renders an Comments component', function() {
+  childComponent = TestUtils.scryRenderedComponentsWithType(component, Comments);
   expect(childComponent.length).toEqual(1);
 });
 
