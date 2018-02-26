@@ -68,6 +68,14 @@ p {
   width: 60px;
 }
 
+.submitComment {
+  width: 80px;
+}
+
+.commentsForm {
+  padding: 20px;
+}
+
 .delete-icon {
   font-size: 40px;
   color: rgb(179, 179, 179);

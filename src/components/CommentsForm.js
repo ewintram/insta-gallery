@@ -4,7 +4,7 @@ import { Button, ControlLabel, FormControl, FormGroup } from 'react-bootstrap';
 class CommentsForm extends React.Component {
   render() {
     return (
-      <form>
+      <form className="commentsForm">
         <FormGroup
           controlId="formBasicText">
           <ControlLabel>Username</ControlLabel>
@@ -18,7 +18,7 @@ class CommentsForm extends React.Component {
             placeholder="Please leave your comment"
           />
         </FormGroup>
-        <Button type="submit">Submit</Button>
+        <Button type="submit" className="submitComment">Submit</Button>
       </form>
     );
   }
