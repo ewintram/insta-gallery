@@ -33,7 +33,9 @@ To launch the app, run
 
 Navigate to `http://localhost:3000`
 
-<!-- Add screenshot -->
+
+![screenshot](public/screenshot.png "instaGallery screenshot")
+
 
 ## Running tests
 
@@ -108,10 +110,12 @@ I want to be able to unlike a photo in my feed,
 so that I can undo a like made by accident.
 ```
 
-**Still to implement**
-
 ```
 As an instaGallery user,
 I want to be able to delete a users card from my feed,
 so that I have more control of the content I like.
 ```
+
+**Still to implement**
+
+I have started to create components for a comments feature but have yet to finalise the implementation and testing of this.
